@@ -7,12 +7,13 @@ include './get_customer_details.php';
 <html lang="en">
 <head>
     <!--    <link href="bundles/basedataaccess/css/uniployer.css" type="text/css" rel="stylesheet"/>-->
-    <link href="bootstrap-3.3.6-dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>
-    <link href="bootstrap-3.3.6-dist/css/bootstrap-theme.css" type="text/css" rel="stylesheet"/>
+    <link href="public/css/bootstrap-3.3.6-dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="public/css/bootstrap-3.3.6-dist/css/bootstrap-theme.css" type="text/css" rel="stylesheet"/>
 
-    <script src="bootstrap-3.3.6-dist/js/bootstrap.js" type="text/javascript"></script>
-    <script src="bootstrap-3.3.6-dist/js/npm.js" type="text/javascript"></script>
-    <script src="bootstrap-3.3.6-dist/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="public/css/bootstrap-3.3.6-dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="public/css/bootstrap-3.3.6-dist/js/npm.js" type="text/javascript"></script>
+<!--    <script src="public/css/bootstrap-3.3.6-dist/js/jquery-1.9.1.min.js" type="text/javascript"></script>-->
     <script type="text/javascript">
         $(document).ready(function () {
             $('.carousel').carousel();
@@ -57,7 +58,7 @@ include './get_customer_details.php';
 
         <div class="row" style="margin-top: 0px; margin-bottom: 50px">
             <div class="col-md-12 text-center">
-                <img src="images/header.jpg" alt="header"/>
+                <img src="public/images/rg-header.jpg" alt="header"/>
             </div>
         </div>
 
@@ -181,18 +182,20 @@ include './get_customer_details.php';
                             <label class="col-sm-2 control-label"></label>
 
                             <div class="col-sm-10">
-                                <input class="btn btn-success form-control" type="submit" id="date-of-registration" value="submit"/>
+                                <input class="btn btn-success form-control" type="submit" id="date-of-registration"
+                                       value="submit"/>
                             </div>
                         </div>
                     </form>
                 </div>
 
-                <div class="col-sm-1">
+                <div class="col-sm-3">
+                    <br/><br/>
                     <strong>Application ID: 2301</strong>
                 </div>
             </div>
             <!--Content end-->
-            <!--            </div>-->
+            <!--</div>-->
         </div>
 
     </div>

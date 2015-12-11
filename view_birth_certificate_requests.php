@@ -6,12 +6,12 @@
 <html lang="en">
 <head>
     <!--    <link href="bundles/basedataaccess/css/uniployer.css" type="text/css" rel="stylesheet"/>-->
-    <link href="bootstrap-3.3.6-dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>
-    <link href="bootstrap-3.3.6-dist/css/bootstrap-theme.css" type="text/css" rel="stylesheet"/>
+    <link href="public/css/bootstrap-3.3.6-dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="public/css/bootstrap-3.3.6-dist/css/bootstrap-theme.css" type="text/css" rel="stylesheet"/>
 
-    <script src="bootstrap-3.3.6-dist/js/bootstrap.js" type="text/javascript"></script>
-    <script src="bootstrap-3.3.6-dist/js/npm.js" type="text/javascript"></script>
-    <script src="bootstrap-3.3.6-dist/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="public/css/bootstrap-3.3.6-dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="public/css/bootstrap-3.3.6-dist/js/npm.js" type="text/javascript"></script>
+    <script src="public/css/bootstrap-3.3.6-dist/js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.carousel').carousel();
@@ -56,7 +56,7 @@
 
         <div class="row" style="margin-top: 0px; margin-bottom: 50px">
             <div class="col-md-12 text-center">
-                <img src="images/header.jpg" alt="header"/>
+                <img src="public/images/rg-header.jpg" alt="header"/>
             </div>
         </div>
 

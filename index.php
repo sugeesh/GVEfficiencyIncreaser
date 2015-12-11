@@ -96,7 +96,7 @@ and open the template in the editor.
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link type="text/css" rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="public/css/bootstrap-3.3.6-dist/css/bootstrap.css">
         <title>Attorney General</title>
     </head>
     <body>
