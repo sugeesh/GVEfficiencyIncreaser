@@ -13,7 +13,7 @@ include './get_customer_details.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="public/css/bootstrap-3.3.6-dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="public/css/bootstrap-3.3.6-dist/js/npm.js" type="text/javascript"></script>
-<!--    <script src="public/css/bootstrap-3.3.6-dist/js/jquery-1.9.1.min.js" type="text/javascript"></script>-->
+    <!--    <script src="public/css/bootstrap-3.3.6-dist/js/jquery-1.9.1.min.js" type="text/javascript"></script>-->
     <script type="text/javascript">
         $(document).ready(function () {
             $('.carousel').carousel();
@@ -33,17 +33,17 @@ include './get_customer_details.php';
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="#" data - toggle="tooltip" title="Homepage" style="font-size: 18px">
-                                <h3 style="margin-top: -7px"><span class="label label-success"> Home</span></h3>
+                                <h3 style="margin-top: -7px"><span class="label label-info"> Home</span></h3>
                             </a>
                         </li>
                         <li>
                             <a href="#" data - toggle="tooltip" title="Read about us" style="font-size: 18px">
-                                <h3 style="margin-top: -7px"><span class="label label-success"> About</span></h3>
+                                <h3 style="margin-top: -7px"><span class="label label-info"> About</span></h3>
                             </a>
                         </li>
                         <li>
                             <a href="#" data - toggle="tooltip" title="Contact us" style="font-size: 18px">
-                                <h3 style="margin-top: -7px"><span class="label label-success"> Services</span></h3>
+                                <h3 style="margin-top: -7px"><span class="label label-info"> Services</span></h3>
                             </a>
                         </li>
                     </ul>
@@ -58,7 +58,7 @@ include './get_customer_details.php';
 
         <div class="row" style="margin-top: 0px; margin-bottom: 50px">
             <div class="col-md-12 text-center">
-                <img src="public/images/eco-header.jpg" alt="header"/>
+                <img src="public/images/vr-header.jpg" alt="header"/>
             </div>
         </div>
 
@@ -68,8 +68,8 @@ include './get_customer_details.php';
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <h4>Invoice for Completing the Smoke Test at ECO Sri</h4>
-                        <h5>Will update the vehicle information at the vehicles registration office.</h5>
+                        <h4>Submitted vehicle insurance update requests</h4>
+                        <h5>This will update the vehicle insurance information.</h5>
                         <hr/>
                     </div>
                 </div>
@@ -119,10 +119,17 @@ include './get_customer_details.php';
 
                 <!--<div class="row">-->
                 <div class="col-lg-9">
-                    Fill the invoice below
                     <br/><br/>
 
                     <form class="form-horizontal col-lg-12">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Customer Name</label>
+
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" placeholder=""
+                                       id="customer-name"/>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Vehicle Number</label>
 
@@ -135,34 +142,18 @@ include './get_customer_details.php';
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Odometer Value</label>
+                            <label class="col-sm-2 control-label">Insurance Number</label>
 
                             <div class="col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
-                                       id="odometer-value"/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Status</label>
-
-                            <div class="col-sm-10">
-                                <input type="radio" name="status" />Pass    &nbsp;&nbsp;&nbsp;&nbsp;
-                                <input type="radio" name="status" />Fail
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Fee</label>
-
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" placeholder=""
-                                       id="fee"/>
+                                       id="insurance-number"/>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label"></label>
 
                             <div class="col-sm-10">
-                                <input class="form-control btn btn-info" type="submit" value="Submit and Print" id="fee"/>
+                                <input class="form-control btn btn-info" type="submit" value="Submit" id="fee"/>
                             </div>
                         </div>
                     </form>
