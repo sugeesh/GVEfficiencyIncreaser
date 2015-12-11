@@ -15,7 +15,7 @@ and open the template in the editor.
             <div class="form-group">
                 <label class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-10">
-                    <p class="form-control-static" >email@example.com</p>
+                    <p class="form-control-static">email@example.com</p>
                 </div>
             </div>
             <div class="form-group">

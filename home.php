@@ -1,3 +1,7 @@
+<?php
+    include './get_details_table.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +18,7 @@
         });
     </script>
 
-    <title> UniPloyer | Home </title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -55,48 +59,27 @@
                 <img src="images/header.jpg" alt="header"/>
             </div>
         </div>
-        <!--Row containing login form start-->
+
         <div class="row">
             <div class="col-md-12">
                 <!--Content start-->
+                <table width="1216" border="1" class="table table-bordered">
+                    <tr>
+                        <th width="284" scope="row">Receive Date</th>
+                        <td width="284">Application_Id</td>
+                        <td width="284">Status</td>
+                        <td width="284">&nbsp;
+                        </td>
+                    </tr>
 
+                    <?php
+                        echo $dynamicList;
+                    ?>
+                </table>
                 <!--Content end-->
-
-                <!--login form start-->
-                <div class="col-md-4">
-                    <form class="form-horizontal">
-                        <h6> Enter login details </h6>
-
-                        <div class="form-group" style="margin-top: 0px">
-                            <div class="col-sm-12">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group" style="margin-top: -10px">
-                            <div class="col-sm-12">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-6">
-                                <div class="checkbox">
-                                    <label><input type="checkbox"/> Remember me </label>
-                                </div>
-                            </div>
-                            <div class="text-right" style="margin-right: 15px">
-                                <input type="submit" class="btn btn-success" value="Sign In"/>
-                            </div>
-                        </div>
-                    </form>
-                    <div style="margin-top: 30px">
-                        <h5> Don't have an account? <a style="cursor: pointer">Sign up here.</a></h5>
-                    </div>
-                </div>
-                <!--Login form end-->
-
             </div>
         </div>
-        <!--Row containing login form end-->
+
     </div>
     <!--Footer-->
     <div style="margin-top: 50px">

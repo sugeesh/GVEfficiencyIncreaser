@@ -1,47 +1,94 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link type="text/css" rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
-    <title>Attorney General</title>
+    <!--    <link href="bundles/basedataaccess/css/uniployer.css" type="text/css" rel="stylesheet"/>-->
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="bootstrap-3.3.6-dist/css/bootstrap-theme.css" type="text/css" rel="stylesheet"/>
+
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="bootstrap-3.3.6-dist/js/npm.js" type="text/javascript"></script>
+    <script src="bootstrap-3.3.6-dist/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+
+    <title>Request Birth Certificate</title>
 </head>
+
 <body>
-<p>
-    <img
-        src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/042011/government_logo_of_sri_lanka-converted.png?itok=er9QPW5U"
-        alt="headImg" width="152" height="129"/><a
-        href="https://www.google.lk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;sqi=2&amp;ved=0ahUKEwiQ8Kv79s3JAhVBthoKHX6lDq4QFggbMAA&amp;url=http%3A%2F%2Fwww.attorneygeneral.gov.lk%2F&amp;usg=AFQjCNGi6TFu7bmnNUcgrj8PAhr2JHl6RA&amp;bvm=bv.109332125,d.d2s&amp;cad=rja"
-        onmousedown="return rwt(this, '', '', '', '1', 'AFQjCNGi6TFu7bmnNUcgrj8PAhr2JHl6RA', '', '0ahUKEwiQ8Kv79s3JAhVBthoKHX6lDq4QFggbMAA', '', '', event)">Attorney
-        General's Department - Sri Lanka</a>
-</p>
+<nav class="navbar navbar-default" style="height: 20px">
+    <div class="container-fluid">
+        <!--Menu content start-->
+        <div style="margin-left: 910px; margin-right: 0px">
+            <div>
+                <div class="text-center center-block">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#" data - toggle="tooltip" title="Homepage" style="font-size: 18px">
+                                <h3 style="margin-top: -7px"><span class="label label-default"> Home</span></h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data - toggle="tooltip" title="Read about us" style="font-size: 18px">
+                                <h3 style="margin-top: -7px"><span class="label label-default"> About</span></h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data - toggle="tooltip" title="Contact us" style="font-size: 18px">
+                                <h3 style="margin-top: -7px"><span class="label label-default"> Services</span></h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Menu content end-->
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="container" style="margin-top: -20px">
 
-<p>&nbsp;</p>
-<table width="1216" border="1" class="table table-bordered">
-    <tr>
-        <th width="284" scope="row">Receive Date</th>
-        <td width="284">Application_Id</td>
-        <td width="284">Status</td>
-        <td width="284">&nbsp;</td>
-    </tr>
-    <form id="birth-certificate-form" name="birth-certificate-form" method="post" action="index.php">
-        <label title="Select Customer"></label>
-        <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
+        <div class="row" style="margin-top: 0px; margin-bottom: 50px">
+            <div class="col-md-12 text-center">
+                <img src="images/header.jpg" alt="header"/>
+            </div>
+        </div>
 
-        <label title="Select AG Office"></label>
-        <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
-    </form>
+        <div class="row">
+            <div class="col-md-12">
+                <!--Content start-->
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Enter Name</label>
 
-</table>
-<p>&nbsp;</p>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="Enter Name" id="name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-2 control-label">Select AG Office</label>
 
-<p>&nbsp;</p>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="AG Office Name" id="ag-office"/>
+                        </div>
+                    </div>
+                </form>
+                <!--Content end-->
+            </div>
+        </div>
+
+    </div>
+    <!--Footer-->
+    <div style="margin-top: 50px">
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">Copyright UniPloyer 2015</p>
+            </div>
+        </footer>
+    </div>
+    <!--Footer-->
+</div>
 </body>
-
 </html>
