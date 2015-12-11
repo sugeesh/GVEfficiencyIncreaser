@@ -81,8 +81,6 @@ if (mysql_num_rows($result) > 0) {
             </tr>
             </form>';
     }
-} else {
-    die("something failed");
 }
 ?>
 
