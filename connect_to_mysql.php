@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 
 $db_host = "127.0.0.1";		
 $db_username="root";       	

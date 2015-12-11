@@ -14,6 +14,7 @@ if (isset($_POST['updateForm'])) {
 ?>
 
 
+
 <?php
 
 //states
@@ -60,7 +61,7 @@ if (mysql_num_rows($result) > 0) {
         $dynamicList .= ' <form id = "form'.$application_id.'" name = "form'.$application_id.'" method = "post" action = "index.php">'
             . '<tr class=' . $tableColor . '>
                 <th scope="row">' . $date_added . '</th>
-                <td> ' . $application_id . ' <a href="www.google.com " >View Form </a></p></td>
+                <td> ' . $application_id . ' <a href="view_application.php?id='.$application_id.'" target="_blank" >View Form </a></p></td>
                 <td>
                         <select name="statusList' . $application_id . '" id="statusList" class="form-control" >
                             <option ' . $receivedSelect . ' value=0>Received</option>
