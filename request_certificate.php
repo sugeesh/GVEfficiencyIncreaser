@@ -183,7 +183,15 @@ include './get_customer_details.php';
 
                             <div class="col-sm-10">
                                 <input class="btn btn-success form-control" type="submit" id="date-of-registration"
-                                       value="submit"/>
+                                       value="submit" onclick="redirect()">
+                                       <script type="text/javascript">
+                                        function redirect()
+                                            {
+                                var url = "http://localhost/UWA2/uwaProject2/view_birth_certificate_requests.php";
+                                window.location(url);
+                                            }
+                                    </script>
+
                             </div>
                         </div>
                     </form>
