@@ -12,7 +12,7 @@ class db
         $this->host="localhost";
         $this->user="root";
         $this->pass="";
-        $this->data="hashtaguva";   
+        $this->data="hastaguwa";   
     }   
     public function connect()
     {

@@ -1,7 +1,4 @@
-<?php
-include './get_details_table.php';
-include './get_customer_details.php';
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -127,11 +124,8 @@ include './get_customer_details.php';
                             <label class="col-sm-2 control-label">Vehicle Number</label>
 
                             <div class="input-group col-sm-10">
-                                <input class="form-control" type="text" placeholder=""
-                                       id="vehicle-number"/>
-                                <div class="input-group-btn">
-                                    <input class="btn" type="button" value="View" data-target="#myModal"/>
-                                </div>
+                                <input class="form-control" type="text" placeholder="" id="vehicle-number"/>
+                               
                             </div>
                         </div>
                         <div class="form-group">
