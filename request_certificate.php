@@ -75,7 +75,7 @@ include './get_customer_details.php';
                 </div>
 
                 <!--                <div class="row">-->
-                <div class="col-lg-10">
+                <div class="col-lg-9">
                     Fill the application below
                     <br/><br/>
 
@@ -83,7 +83,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name of Applicant</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
                                        id="applicant-name"/>
                             </div>
@@ -92,7 +92,7 @@ include './get_customer_details.php';
                             <label class="col-sm-2 control-label">Full name of the person respecting whose birth
                                 application is made</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
                                        id="appicant-full-name"/>
                             </div>
@@ -100,7 +100,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Sex</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <select class="form-control" id="select-sex">
                                     <option>Male</option>
                                     <option>Female</option>
@@ -110,7 +110,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Father's Full Name</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
                                        id="fathers-full-name"/>
                             </div>
@@ -118,7 +118,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Mother's Full Name</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
                                        id="mothers-full-name"/>
                             </div>
@@ -126,7 +126,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Birth Day</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
                                        id="birth-day"/>
                             </div>
@@ -134,7 +134,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Place of Occurence</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
                                        id="place-of-accurence"/>
                             </div>
@@ -142,7 +142,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Registrar's Division</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <select id="registrars-division" class="form-control">
                                     <?php
                                     while ($row = mysql_fetch_array($ag_offices_list)) {
@@ -157,7 +157,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Revenue District</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <select id="revenue-district" class="form-control">
                                     <?php
                                     foreach ($districts as $district_name) {
@@ -172,7 +172,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Date of Registration (If Known)</label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
                                        id="date-of-registration"/>
                             </div>
@@ -180,7 +180,7 @@ include './get_customer_details.php';
                         <div class="form-group">
                             <label class="col-sm-2 control-label"></label>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-10">
                                 <input class="btn btn-success form-control" type="submit" id="date-of-registration" value="submit"/>
                             </div>
                         </div>
