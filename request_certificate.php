@@ -1,3 +1,8 @@
+<?php
+include './get_details_table.php';
+include './get_customer_details.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,26 +62,137 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12">
-                <!--Content start-->
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Enter Name</label>
+            <!--            Content Start-->
+            <div class="col-lg-12">
 
-                        <div class="col-sm-10">
-                            <input type="text" placeholder="Enter Name" id="name"/>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>Application for Birth Certificate and/or Search for Registers</h4>
+                        <h5>To be sent online to the Office of the District Registrar of the District in which the birth
+                            occured</h5>
+                        <hr/>
                     </div>
-                    <div class="form-group">
-                        <label for="inputPassword" class="col-sm-2 control-label">Select AG Office</label>
+                </div>
 
-                        <div class="col-sm-10">
-                            <input type="text" placeholder="AG Office Name" id="ag-office"/>
+                <!--                <div class="row">-->
+                <div class="col-lg-10">
+                    Fill the application below
+                    <br/><br/>
+
+                    <form class="form-horizontal col-lg-12">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Name of Applicant</label>
+
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" placeholder=""
+                                       id="applicant-name"/>
+                            </div>
                         </div>
-                    </div>
-                </form>
-                <!--Content end-->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Full name of the person respecting whose birth
+                                application is made</label>
+
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" placeholder=""
+                                       id="appicant-full-name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Sex</label>
+
+                            <div class="col-sm-7">
+                                <select class="form-control" id="select-sex">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Father's Full Name</label>
+
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" placeholder=""
+                                       id="fathers-full-name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Mother's Full Name</label>
+
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" placeholder=""
+                                       id="mothers-full-name"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Birth Day</label>
+
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" placeholder=""
+                                       id="birth-day"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Place of Occurence</label>
+
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" placeholder=""
+                                       id="place-of-accurence"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Registrar's Division</label>
+
+                            <div class="col-sm-7">
+                                <select id="registrars-division" class="form-control">
+                                    <?php
+                                    while ($row = mysql_fetch_array($ag_offices_list)) {
+                                        ?>
+                                        <option><?php echo $row['zone'] ?></option>
+                                        <?php
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Revenue District</label>
+
+                            <div class="col-sm-7">
+                                <select id="revenue-district" class="form-control">
+                                    <?php
+                                    foreach ($districts as $district_name) {
+                                        ?>
+                                        <option><?php echo $district_name ?></option>
+                                        <?php
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Date of Registration (If Known)</label>
+
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" placeholder=""
+                                       id="date-of-registration"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"></label>
+
+                            <div class="col-sm-7">
+                                <input class="btn btn-success form-control" type="submit" id="date-of-registration" value="submit"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-1">
+                    <strong>Application ID: 2301</strong>
+                </div>
             </div>
+            <!--Content end-->
+            <!--            </div>-->
         </div>
 
     </div>
