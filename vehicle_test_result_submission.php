@@ -20,7 +20,7 @@ include './get_customer_details.php';
         });
     </script>
 
-    <title>Request Birth Certificate</title>
+    <title>Enter ECO Sri Invoice</title>
 </head>
 
 <body>
@@ -74,6 +74,49 @@ include './get_customer_details.php';
                     </div>
                 </div>
 
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Vehicle Details</h4>
+
+                            </div>
+                            <div class="modal-body">
+                                <?php
+                                error_reporting(E_ERROR | E_WARNING | E_PARSE);
+                                include 'db.php';
+
+                                $vehi_no = "sam";
+                                echo $vehi_no;
+                                $n = new db();
+                                $n->connect();
+                                $vehicle = $n->getVehicle($vehi_no);
+                                echo $vehicle[1];
+                                ?>
+
+                                <p>Vehicle Number :<?php echo $vehicle[0] ?></p>
+
+                                <p>Engine Number :<?php echo $vehicle[1] ?></p>
+
+                                <p>Chassis Number :<?php echo $vehicle[2] ?></p>
+
+                                <p>Fuel Type :<?php echo $vehicle[3] ?></p>
+
+                                <p>Made Year :<?php echo $vehicle[4] ?></p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <!--<div class="row">-->
                 <div class="col-lg-9">
                     Fill the invoice below
@@ -97,6 +140,14 @@ include './get_customer_details.php';
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="col-sm-2 control-label">Status</label>
+
+                            <div class="col-sm-10">
+                                <input type="radio" name="status" />Pass    &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="status" />Fail
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="col-sm-2 control-label">Fee</label>
 
                             <div class="col-sm-10">
@@ -105,11 +156,10 @@ include './get_customer_details.php';
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Odometer Value</label>
+                            <label class="col-sm-2 control-label"></label>
 
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" placeholder=""
-                                       id="odometer-value"/>
+                                <input class="form-control btn btn-info" type="submit" value="Submit and Print" id="fee"/>
                             </div>
                         </div>
                     </form>
@@ -130,7 +180,7 @@ include './get_customer_details.php';
     <div style="margin-top: 50px">
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">Copyright UniPloyer 2015</p>
+                <p class="text-muted">Copyright #hashtag 2015</p>
             </div>
         </footer>
     </div>
