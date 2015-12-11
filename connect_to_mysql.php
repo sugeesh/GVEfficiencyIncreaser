@@ -1,11 +1,11 @@
 <?php
 error_reporting(0);
 
-$db_host = "127.0.0.1";		//"mysql9.000webhost.com";
-$db_username="root";       	//"a6712017_neo";
-//$db_password="lpdscneo";			//"lpdsc5697";
-$db_password="";			//"lpdsc5697";
-$db_name="hashtaguwa";		//"a6712017_store";
+$db_host = "127.0.0.1";		
+$db_username="root";       	
+$db_password="lpdscneo";	
+//$db_password="";		
+$db_name="hashtaguwa";		
 
 mysql_connect($db_host,$db_username,$db_password) or die("could not connect to the Database.");
 mysql_select_db($db_name) or die ("no database");
