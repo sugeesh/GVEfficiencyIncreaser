@@ -1,7 +1,4 @@
-<?php
-include './get_details_table.php';
-include './get_customer_details.php';
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,48 +71,7 @@ include './get_customer_details.php';
                     </div>
                 </div>
 
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Vehicle Details</h4>
-
-                            </div>
-                            <div class="modal-body">
-                                <?php
-                                error_reporting(E_ERROR | E_WARNING | E_PARSE);
-                                include 'db.php';
-
-                                $vehi_no = "sam";
-                                echo $vehi_no;
-                                $n = new db();
-                                $n->connect();
-                                $vehicle = $n->getVehicle($vehi_no);
-                                echo $vehicle[1];
-                                ?>
-
-                                <p>Vehicle Number :<?php echo $vehicle[0] ?></p>
-
-                                <p>Engine Number :<?php echo $vehicle[1] ?></p>
-
-                                <p>Chassis Number :<?php echo $vehicle[2] ?></p>
-
-                                <p>Fuel Type :<?php echo $vehicle[3] ?></p>
-
-                                <p>Made Year :<?php echo $vehicle[4] ?></p>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            
 
                 <!--<div class="row">-->
                 <div class="col-lg-9">
@@ -136,9 +92,54 @@ include './get_customer_details.php';
                             <div class="input-group col-sm-10">
                                 <input class="form-control" type="text" placeholder=""
                                        id="vehicle-number"/>
-                                <div class="input-group-btn">
-                                    <input class="btn" type="button" value="View" data-target="#myModal"/>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                            View
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Vehicle Details</h4>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <?php
+                                        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+                                        include 'db.php';
+
+                                        $vehi_no = "sam";
+                                        echo $vehi_no;
+                                        $n = new db();
+                                        $n->connect();
+                                        $vehicle = $n->getVehicle($vehi_no);
+                                        echo $vehicle[1];
+                                        ?>
+
+                                        <p>Vehicle Number :<?php echo $vehicle[0] ?></p>
+
+                                        <p>Engine Number :<?php echo $vehicle[1] ?></p>
+
+                                        <p>Chassis Number :<?php echo $vehicle[2] ?></p>
+
+                                        <p>Fuel Type :<?php echo $vehicle[3] ?></p>
+
+                                        <p>Made Year :<?php echo $vehicle[4] ?></p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                        </button>
+                                    </div>
                                 </div>
+
+                            </div>
+                        </div>
+                                
                             </div>
                         </div>
                         <div class="form-group">
